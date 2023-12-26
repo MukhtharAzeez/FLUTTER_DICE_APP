@@ -9,14 +9,15 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
+  // BuildContext added as parameter
   Widget build(context) {
-    // BuildContext added as parameter
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          body: GradientContainer('Hello World!!',
-              const [Colors.teal, Color.fromARGB(255, 12, 14, 13)])),
+          body: GradientContainer(
+              'Hello World!!', [Colors.teal, Color.fromARGB(255, 12, 14, 13)])),
     );
   }
 }

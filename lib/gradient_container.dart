@@ -6,7 +6,6 @@ class GradientContainer extends StatelessWidget {
   final String text;
   final List<Color> colors;
 
-  
   @override
   Widget build(context) {
     return Container(
@@ -17,17 +16,7 @@ class GradientContainer extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child:const Center(
-        // child: Text(
-        //   text,
-        //   style: const TextStyle(
-        //     color: Colors.white,
-        //     fontStyle: FontStyle.italic,
-        //     fontSize: 30,
-        //   ),
-        // ),
-        child: DiceRoller()
-      ),
+      child: const Center(child: DiceRoller()),
     );
   }
 }
