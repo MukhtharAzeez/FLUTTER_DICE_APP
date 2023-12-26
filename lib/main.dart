@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(context) {
     // BuildContext added as parameter
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          body: GradientContainer(
-              'Hello World!!', [Colors.teal, Color.fromARGB(255, 12, 14, 13)])),
+          body: GradientContainer('Hello World!!',
+              const [Colors.teal, Color.fromARGB(255, 12, 14, 13)])),
     );
   }
 }
